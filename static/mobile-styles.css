@@ -1,15 +1,3 @@
-/* temporary style for the icon display DELETE LATER*/
-.temp-icon-display {
-  display: flex;
-  flex-direction: column;
-  width: 260px;
-}
-
-.temp-icon-display>i {
-  border: 1px solid black;
-  height: 20px;
-}
-
 /* All decoration and behavior removed from anchors, buttons, and lists
 ===================================================================== */
 button {
@@ -20,6 +8,13 @@ button {
   font: inherit;
   outline: inherit;
   cursor: pointer;
+
+  /* All buttons have these stylings.
+  banner-button needs drop shadow */
+  background-color: var(--color-red);
+  height: 44px;
+  width: 162px;
+  border-radius: 50px;
 }
 
 a {
@@ -58,22 +53,30 @@ li {
 
 /* SIZING ACROSS ALL DEVICES
 =============================== */
-/* All backgrounds are 100% of the device */
-header {
-  width: 100vw;
+/* Removing all default padding from page */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* remove gross scroll bars */
+  scrollbar-width: none;
 }
 
-main {
+/* All backgrounds are 100% of the device and centered */
+header,
+main,
+footer,
+section,
+.content-container {
   width: 100vw;
-}
-
-footer {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Content is 100% of device until it reaches 1000px */
 .content-container {
-  width: 100vw;
   max-width: 1000px;
 }
 
@@ -90,4 +93,36 @@ body {
   --color-blue: #071629;
   --color-white: #FFFFFF;
   --color-banner-border: #979797;
+}
+
+/* HEADER
+========================================= */
+header {
+  color: var(--color-white);
+  background-image: url("./images/headphones_hero_1.jpg");
+  border: 1px solid var(--color-banner-border)
+}
+
+
+/* MAIN
+========================================= */
+/* WHAT WE DO... */
+
+/* RESULTS */
+.results-section {
+  color: var(--color-white);
+  background-color: #D8D8D8;
+  background: url("./images/headphones_hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* CONTACT */
+
+/* FOOTER
+========================================= */
+footer {
+  color: var(--color-white);
+  background-color: var(--color-blue);
 }

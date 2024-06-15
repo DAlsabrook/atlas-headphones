@@ -16,33 +16,32 @@
 </head>
 <body>
   <header>
-    <!-- Keeps content under 1000px on large screens -->
-    <div class="content-container">
-      <!-- Navigation bar -->
-      <nav class="nav-bar">
-        <a href="#"><img src="./static/images/logo_headphones.png" alt="Headphones logo" class="nav-logo"></a>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="#">what we do</a></li>
-          <li class="nav-link"><a href="#">our results</a></li>
-          <li class="nav-link"><a href="#">contact us</a></li>
-        </ul>
-      </nav>
-      <!-- Header image (banner background) and text -->
       <section class="banner">
-        <div class="banner-content">
-          <h1 class="banner-title">Lorem ipsum dolor set amet lorem ipsum</h1>
-          <p class="banner-subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-          <button class="banner-button">CALL TO ACTION</button>
-          <p class="banner-text"></p>
+        <!-- Keeps content under 1000px on large screens -->
+        <div class="content-container">
+          <nav class="nav-bar">
+            <a href="#"><img src="./static/images/logo_headphones.png" alt="Headphones logo" class="nav-logo"></a>
+            <ul class="nav-links">
+              <li class="nav-link"><a href="#">what we do</a></li>
+              <li class="nav-link"><a href="#">our results</a></li>
+              <li class="nav-link"><a href="#">contact us</a></li>
+            </ul>
+          </nav>
+          <div class="banner-content">
+            <h1 class="banner-title">Lorem ipsum dolor set amet lorem ipsum</h1>
+            <p class="banner-subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+            <button class="banner-button">CALL TO ACTION</button>
+            <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
         </div>
       </section>
-    </div>
   </header>
   <main>
-    <!-- Keeps content under 1000px on large screens -->
-    <div class="content-container">
-      <!-- SECTION for "what we do..." -->
-      <section class="do-section">
+    <!-- SECTION for "what we do..." -->
+    <section class="do-section">
+      <div class="content-container">
         <h2 class="do-title">What we do…</h2>
         <p class="do-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -73,38 +72,46 @@
             <p class="do-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-      </section>
-      <!-- SECTION for "results" -->
-      <section class="results-section">
+      </div>
+    </section>
+    <!-- SECTION for "results" -->
+    <section class="results-section">
+      <div class="content-container">
         <h2 class="results-title">Our results speak for themselves</h2>
         <p class="results-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <div class="results-item-list">
+          <!-- Result item 1 -->
           <div class="results-item">
             <img src="./static/images/pentagone.png" alt="background color pentagone">
             <p class="results-item-percent">+2%</p>
             <p class="results-item-text">Lorem ipsum dolor</p>
           </div>
+          <!-- Result item 2 -->
           <div class="results-item">
             <img src="./static/images/pentagone.png" alt="background color pentagone">
             <p class="results-item-percent">+2%</p>
             <p class="results-item-text">Lorem ipsum dolor</p>
           </div>
+          <!-- Result item 3 -->
           <div class="results-item">
             <img src="./static/images/pentagone.png" alt="background color pentagone">
             <p class="results-item-percent">+2%</p>
             <p class="results-item-text">Lorem ipsum dolor</p>
           </div>
+          <!-- Result item 4 -->
           <div class="results-item">
             <img src="./static/images/pentagone.png" alt="background color pentagone">
             <p class="results-item-percent">+2%</p>
             <p class="results-item-text">Lorem ipsum dolor</p>
           </div>
         </div>
-      </section>
-      <!-- SECTION for "contact us" -->
-      <section class="contact-section">
+      </div>
+    </section>
+    <!-- SECTION for "contact us" -->
+    <section class="contact-section">
+      <div class="content-container">
         <h2 class="contact-title">Contact us</h2>
         <form class="contact-form">
           <input type="text" id="name" name="name" placeholder="Name"><br>
@@ -112,13 +119,13 @@
           <input type="text" id="message" name="message" placeholder="Your message"><br>
           <button type="submit">CALL TO ACTION</button>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer>
-    <!-- Keeps content under 1000px on large screens -->
-    <div class="content-container">
-      <section class="footer-section">
+    <section class="footer-section">
+      <div  class="content-container">
+        <!-- bar contains logo and socials -->
         <div class="footer-bar">
           <a href="#"><img src="./static/images/logo_headphones.png" alt="Headphones logo" class="footer-logo"></a>
           <div class="footer-socials">
@@ -128,35 +135,8 @@
           </div>
         </div>
         <p class="footer-copyright">&copy;headphones 2020</p>
-      </section>
-    </div>
+      </div>
+    </section>
   </footer>
-
-  <!-- Temporary div to show icons and their class names.
-   Use these icons by adding a <i></i> with the class name of the icon you want
-   DELETE LATER-->
-  <div class="temp-icon-display">
-    <i class="holberton_school-icon-arrow_1">holberton_school-icon-arrow_1</i>
-    <i class="holberton_school-icon-arrow_2">holberton_school-icon-arrow_2</i>
-    <i class="holberton_school-icon-arrow_3">holberton_school-icon-arrow_3</i>
-    <i class="holberton_school-icon-arrow_4">holberton_school-icon-arrow_4</i>
-    <i class="holberton_school-icon-arrow_5">holberton_school-icon-arrow_5</i>
-    <i class="holberton_school-icon-check">holberton_school-icon-check</i>
-    <i class="holberton_school-icon-ic_bag">holberton_school-icon-ic_bag</i>
-    <i class="holberton_school-icon-ic_cart">holberton_school-icon-ic_cart</i>
-    <i class="holberton_school-icon-ic_facebook">holberton_school-icon-ic_facebook</i>
-    <i class="holberton_school-icon-ic_hearing">holberton_school-icon-ic_hearing</i>
-    <i class="holberton_school-icon-ic_instagram">holberton_school-icon-ic_instagram</i>
-    <i class="holberton_school-icon-ic_laptop">holberton_school-icon-ic_laptop</i>
-    <i class="holberton_school-icon-ic_money">holberton_school-icon-ic_money</i>
-    <i class="holberton_school-icon-ic_music">holberton_school-icon-ic_music</i>
-    <i class="holberton_school-icon-ic_sound">holberton_school-icon-ic_sound</i>
-    <i class="holberton_school-icon-ic_twitter">holberton_school-icon-ic_twitter</i>
-    <i class="holberton_school-icon-ic_video">holberton_school-icon-ic_video</i>
-    <i class="holberton_school-icon-menu">holberton_school-icon-menu</i>
-    <i class="holberton_school-icon-search_1">holberton_school-icon-search_1</i>
-    <i class="holberton_school-icon-search_2">holberton_school-icon-search_2</i>
-    <i class="holberton_school-icon-star">holberton_school-icon-star</i>
-  </div>
 </body>
 </html>
