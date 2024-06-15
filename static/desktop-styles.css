@@ -18,6 +18,7 @@ button {
   padding: 0;
   font: inherit;
   outline: inherit;
+  cursor: pointer;
 }
 
 a {
