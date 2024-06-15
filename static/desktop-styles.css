@@ -1,0 +1,91 @@
+/* temporary style for the icon display DELETE LATER*/
+.temp-icon-display {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+.temp-icon-display>i {
+  border: 1px solid black;
+  height: 20px;
+}
+
+/* All decoration and behavior removed from anchors, buttons, and lists
+===================================================================== */
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+}
+
+a {
+  text-decoration: none;
+  /* Remove underlines */
+  color: inherit;
+  /* Inherit color from parent */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
+a:visited {
+  color: inherit;
+  /* Inherit color from parent, even after link is visited */
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  /* Remove underlines on hover/focus */
+}
+
+/* Remove all list styling */
+ul,
+ol {
+  list-style-type: none;
+  /* Remove bullet points or numbers */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* SIZING ACROSS ALL DEVICES
+=============================== */
+/* All backgrounds are 100% of the device */
+header {
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+}
+
+footer {
+  width: 100vw;
+}
+
+/* Content is 100% of device until it reaches 1000px */
+.content-container {
+  width: 100vw;
+  max-width: 1000px;
+}
+
+/* All text will default to the correct font and "black" text
+on the whole page is actually this dark blue */
+body {
+  color: var(--color-blue);
+  font-family: sans-serif;
+}
+
+/* CSS Variables */
+:root {
+  --color-red: #FF6565;
+  --color-blue: #071629;
+  --color-white: #FFFFFF;
+  --color-banner-border: #979797;
+}
