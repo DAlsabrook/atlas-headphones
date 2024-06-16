@@ -13,12 +13,14 @@
   <link rel="stylesheet" media="(min-width: 768px)" href="./static/desktop-styles.css" />
   <!-- Font Family for icons -->
   <link rel="stylesheet" href="./static/holberton_school-icon/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <img src="./static/images/headphones_hero_1.jpg" alt="headphone girl">
       <section class="banner">
         <!-- Keeps content under 1000px on large screens -->
-        <div class="content-container">
+        <div class="content-container nav-banner-container">
           <nav class="nav-bar">
             <a href="#"><img src="./static/images/logo_headphones.png" alt="Headphones logo" class="nav-logo"></a>
             <ul class="nav-links">
@@ -28,8 +30,10 @@
             </ul>
           </nav>
           <div class="banner-content">
-            <h1 class="banner-title">Lorem ipsum dolor set amet lorem ipsum</h1>
-            <p class="banner-subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+            <div>
+              <h1 class="banner-title">Lorem ipsum dolor set amet lorem ipsum</h1>
+              <p class="banner-subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+            </div>
             <button class="banner-button">CALL TO ACTION</button>
             <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -42,10 +46,12 @@
     <!-- SECTION for "what we do..." -->
     <section class="do-section">
       <div class="content-container">
-        <h2 class="do-title">What we do…</h2>
-        <p class="do-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="do-title-container">
+          <h2 class="do-title">What we do…</h2>
+          <p class="do-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
         <div class="do-item-list">
           <!-- Sound item -->
           <div class="do-item">
@@ -76,16 +82,19 @@
     </section>
     <!-- SECTION for "results" -->
     <section class="results-section">
-      <div class="content-container">
-        <h2 class="results-title">Our results speak for themselves</h2>
-        <p class="results-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <img src="./static/images/headphones_hero_2.jpg" alt="background image headphone lady">
+      <div class="content-container results-container">
+        <div class="results-title-container">
+          <h2 class="results-title">Our results speak for themselves</h2>
+          <p class="results-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
         <div class="results-item-list">
           <!-- Result item 1 -->
           <div class="results-item">
-            <img src="./static/images/pentagone.png" alt="background color pentagone">
-            <p class="results-item-percent">+2%</p>
+              <img src="./static/images/pentagone.png" alt="background color pentagone">
+              <p class="results-item-percent">+2%</p>
             <p class="results-item-text">Lorem ipsum dolor</p>
           </div>
           <!-- Result item 2 -->
@@ -123,20 +132,18 @@
     </section>
   </main>
   <footer>
-    <section class="footer-section">
-      <div  class="content-container">
+      <div  class="content-container footer-content">
         <!-- bar contains logo and socials -->
         <div class="footer-bar">
           <a href="#"><img src="./static/images/logo_headphones.png" alt="Headphones logo" class="footer-logo"></a>
           <div class="footer-socials">
-            <i class="holberton_school-icon-ic_facebook"></i>
-            <i class="holberton_school-icon-ic_twitter"></i>
-            <i class="holberton_school-icon-ic_instagram"></i>
+            <a href="#"><i class="holberton_school-icon-ic_facebook"></i></a>
+            <a href="#"><i class="holberton_school-icon-ic_twitter"></i></a>
+            <a href="#"><i class="holberton_school-icon-ic_instagram"></i></a>
           </div>
         </div>
         <p class="footer-copyright">&copy;headphones 2020</p>
       </div>
-    </section>
   </footer>
 </body>
 </html>
