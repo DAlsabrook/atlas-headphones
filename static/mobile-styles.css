@@ -150,6 +150,12 @@ header>img {
   font-size: 25px;
 }
 
+.x {
+  font-size: x-large;
+  opacity: 0;
+  margin-left: 5px;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: column;
@@ -173,9 +179,14 @@ header>img {
   font-size: 12px;
 }
 
-.checkbox:checked ~ .nav-bar>.nav-links {
+.checkbox:checked ~ .nav-bar>.nav-links,
+.checkbox:checked~.x {
   opacity: 1;
   transition: opacity 0.3s ease;
+}
+
+.checkbox:checked~.holberton_school-icon-menu{
+  display: none;
 }
 
 .nav-link {
