@@ -332,11 +332,11 @@ header>img {
 
 .contact-section {
   height: 700px;
+  margin-top: -50px;
 }
 
 .contact-title {
   font-size: 32px;
-  margin-top: 100px;
 }
 
 .contact-form{
