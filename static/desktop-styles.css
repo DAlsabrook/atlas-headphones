@@ -135,6 +135,9 @@ header>img {
   height: 100%;
 }
 
+.nav_burger {
+  width: 100%;
+}
 .nav-bar {
   display: flex;
   flex-direction: row;
