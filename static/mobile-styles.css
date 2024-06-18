@@ -129,13 +129,25 @@ header>img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: -320px;
-  height: 1200px;
+  height: 800px;
 }
+
+.nav_burger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin-top: -80px;
+}
+
+.hamburger {
+  font-size: 25px;
+}
+
 
 .nav-bar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -148,12 +160,17 @@ header>img {
 
 .nav-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  visibility: hidden;
   height: 15px;
   width: 255px;
   font-size: 12px;
+}
+
+.nav-link {
+  margin: 11px;
 }
 
 .banner-content {
