@@ -113,6 +113,8 @@ body {
 header {
   color: var(--color-white);
   height: 800px;
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--color-banner-border);
 }
 
@@ -208,9 +210,7 @@ header>img {
 .do-section {
   height: 700px;
   padding-bottom: 50px;
-  margin-left: 150px;
   margin-top: 50px;
-  margin-bottom: 117PX;
 }
 
 .do-title-container {
@@ -236,7 +236,7 @@ header>img {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 90%;
-  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
 .do-item {
@@ -293,11 +293,10 @@ header>img {
 }
 
 .results-item-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: -180px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* margin-left: -180px; */
   flex-wrap: wrap;
   width: 80%;
 }
@@ -305,22 +304,24 @@ header>img {
 .results-item {
   height: 190px;
   width: 190px;
-  margin: 20px;
-  text-align: center;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
 }
 
 .results-item>img {
   height: 190px;
   width: 190px;
-  position: absolute;
+  object-fit: contain;
 }
 
 .results-item-percent,
 .results-item-text {
-  position: relative;
-  z-index: 1;
-  top: 10%;
-  left: 50%;
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  margin: 0;
+  padding: 0;
 }
 
 .results-item-percent {
@@ -331,7 +332,8 @@ header>img {
 .results-item-text {
   font-size: 14px;
   font-weight: 400;
-  margin-top: -30px;
+  margin-top: 70px;
+  margin-left: -10px
 }
 
 /* CONTACT */
