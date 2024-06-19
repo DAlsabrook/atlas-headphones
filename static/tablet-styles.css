@@ -204,16 +204,19 @@ header>img {
 /* MAIN
 ========================================= */
 
-/* WHAT WE DO... */
+/* WHAT WE DO... -Nathan's section*/
 .do-section {
   height: 700px;
   padding-bottom: 50px;
+  margin-left: 150px;
+  margin-top: 50px;
+  margin-bottom: 117PX;
 }
 
 .do-title-container {
   text-align: center;
-  width: 63.7%;
-  margin-bottom: 40px;
+  width: 95%;
+  margin-bottom: px;
 }
 
 .do-title {
@@ -225,23 +228,22 @@ header>img {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 30px;
 }
 
 .do-item-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
   margin-top: -50px;
 }
 
 .do-item {
   text-align: center;
   height: 180px;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  width: 207px;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .holberton_school-icon-ic_sound,
