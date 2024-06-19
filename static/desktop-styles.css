@@ -117,10 +117,13 @@ header {
   border: 1px solid var(--color-banner-border);
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to bottom, #3c444f,var(--color-blue), var(--color-blue));
 }
 
 header>img {
   position: absolute;
+  width: 1440px;
+  top: 0;
 }
 
 .banner {
@@ -169,7 +172,7 @@ header>img {
   align-items: center;
   text-align: center;
   margin-bottom: 110px;
-  height: 350px;
+  height: 50%;
   width: 63.7%;
 }
 
@@ -257,7 +260,7 @@ header>img {
 /* RESULTS */
 .results-section {
   color: var(--color-white);
-  background-color: #D8D8D8;
+  background-color: var(--color-blue);
   height: 650px;
   position: relative;
   overflow: hidden;
@@ -265,6 +268,8 @@ header>img {
 
 .results-section>img {
   position: absolute;
+  width: 1440px;
+  top: 0;
 }
 
 .results-container {
@@ -408,6 +413,10 @@ footer {
 }
 .footer-socials>a>i {
   font-size: 32px;
+}
+
+.footer-socials>a>i:hover {
+  opacity: .9;
 }
 
 .footer-copyright {

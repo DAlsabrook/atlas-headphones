@@ -83,6 +83,7 @@ section,
 /* Content is 100% of device until it reaches 1000px */
 .content-container {
   max-width: 1000px;
+  width: 90%;
 }
 
 /* All text will default to the correct font and "black" text
@@ -90,6 +91,13 @@ on the whole page is actually this dark blue */
 body {
   color: var(--color-blue);
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* removing items used in mobile */
+.checkbox,
+.x,
+.holberton_school-icon-menu {
+  display: none;
 }
 
 /* CSS Variables */
@@ -124,6 +132,10 @@ header>img {
   height: 100%;
 }
 
+.nav_burger {
+  width: 100%;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -154,9 +166,9 @@ header>img {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-bottom: 110px;
-  height: 350px;
-  width: 63.7%;
+  margin-bottom: 80px;
+  height: 400px;
+  width: 92%;
 }
 
 .banner-content>div {
@@ -243,12 +255,16 @@ header>img {
 /* RESULTS */
 .results-section {
   color: var(--color-white);
-  background-color: #D8D8D8;
-  height: 650px;
+  background-color: var(--color-blue);
+  height: 850px;
+  position: relative;
+  overflow: hidden;
 }
 
 .results-section>img {
   position: absolute;
+  margin-top: -50px;
+  top: 0;
 }
 
 .results-container {
@@ -269,7 +285,6 @@ header>img {
 }
 
 .results-text {
-  width: 637px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -278,16 +293,17 @@ header>img {
 .results-item-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-left: -180px;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
 }
 
 .results-item {
   height: 190px;
   width: 190px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -324,7 +340,7 @@ header>img {
 
 .contact-title {
   font-size: 32px;
-  margin-top: 100px;
+  margin: auto;
 }
 
 .contact-form {
