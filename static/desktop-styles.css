@@ -10,7 +10,7 @@ button {
   cursor: pointer;
 
   /* All buttons have these stylings.
-  banner-button needs drop shadow */
+  banner-button adds drop shadow */
   background-color: var(--color-red);
   height: 44px;
   width: 162px;
@@ -40,6 +40,7 @@ a:focus {
   text-decoration: none;
   /* Remove underlines on hover/focus */
   color: var(--color-red);
+  /* custom color on hover */
 }
 
 /* Remove all list styling */
@@ -335,6 +336,17 @@ header>img {
   font-size: 14px;
   font-weight: 400;
   margin-top: -30px;
+}
+
+/* from about 768-830 this was breaking the above code.
+now it just squishes a little in that 60px window*/
+@media (max-width: 880px) {
+  .results-item,
+  .results-item>img {
+    width: 24.5%;
+    height: 190px;
+  }
+
 }
 /* CONTACT */
 
